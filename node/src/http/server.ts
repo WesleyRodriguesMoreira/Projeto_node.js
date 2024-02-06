@@ -2,7 +2,9 @@ import fastify from 'fastify';
 
 const app = fastify();
 
-app.get('/hello', () =>{
+
+app.post('/polls', (request) =>{
+    console.log(request.body)
     return ('Hello NLW');
 });
 
